@@ -1,0 +1,31 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+li{list-style-type: none;}
+.clear{clear: both}
+html, body{font-family: Lato, Arial, Helvetica, sans-serif}
+.container{width: 100%; display: block; margin: 50px auto auto auto; padding: 0 20px;}
+.container .menu-title{font-size: 40px; margin: 0 0 50px 0; text-align: center; } 
+.container .item{width: calc((100% / 3) - 20px); display: inline-block; vertical-align: top; background-color: grey; border: 1px solid black; margin: 0 26px 20px 0;}
+.container .item:last-child{margin: 0;}
+.container .item h2{font-size: 22px; padding: 5px 0; float: right; border-style: solid; border-color: black; border-width: 0 0 1px 1px; width: 200px; text-align: center;}
+.container .item:first-of-type h2{background-color: pink;}
+.container .item:nth-of-type(2) h2{background-color: red; color: white;}
+.container .item:last-of-type h2{background-color: yellow;}
+.container .item p{margin: 10px 0 20px 0; padding: 0 10px; line-height: 22px;}
+
+
+/* Desktop View */
+@media only screen and (min-width: 992px){
+
+}
+
+/* Tablet View */
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .container .item{width: calc((100% / 2) - 10px); margin: 0 0 20px 0;}
+    .container .item:nth-child(2n+1){margin: 0 0 20px 16px;}
+    .container .item:last-child{width: 100%;}
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px){
+    .container .item{width: 100%; margin: 0 0 20px 0;}
+}
