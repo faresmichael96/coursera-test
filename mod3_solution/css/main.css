@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar.navbar-default{background-color: cornflowerblue;}
+.navbar-brand{font-size: 25px; color: black !important; font-weight: bold;}
+
+.navbar-default .navbar-nav>li>a{color: white; font-size: 16px; text-align: center;}
+
+section .container-fluid{margin: 30px auto auto auto; background-color: lightblue;}
+section .container-fluid h2{margin-top: 10px;}
+section .container-fluid p{text-align: left;}
+
+@media only screen and (max-width: 767px){
+    #collapsable-nav{background-color: black;}
+}   
